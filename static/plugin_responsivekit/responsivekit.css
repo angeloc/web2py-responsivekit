@@ -1,0 +1,73 @@
+/*
+Media query for responsive css tables
+Idea from http://css-tricks.com/responsive-data-tables/
+Author: Angelo Compagnucci <angelo.compagnucci@gmail.com>
+*/
+@media
+only screen and (max-width: 700px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+        
+    .resp-header {
+        white-space: nowrap;
+        position: absolute;
+        width: 40%;
+        padding-right: 10 px;
+        left: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    div:not(.calendar) table, 
+    div:not(.calendar) thead, 
+    div:not(.calendar) tbody, 
+    div:not(.calendar) th, 
+    div:not(.calendar) td, 
+    div:not(.calendar) tr {
+        display: block;
+    }
+
+    div:not(.calendar) thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    div:not(.calendar) td {
+        border: none;
+        position: relative;
+        padding: 0px 0px 0px 45%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+    div:not(.calendar) form td {
+        padding: 0px 0px 0px 0px;
+        width: auto;
+        overflow: visible;
+        text-overflow: ;
+    }
+    
+    div:not(.calendar) tr { 
+        border-bottom: 1px solid #eee; 
+        margin-bottom: 3px;
+    }
+    
+    div:not(.calendar) form tr { 
+        border-bottom: none; 
+        margin-bottom: 0;
+    }
+    
+    td.w2p_fl, td.w2p_fc {
+        text-align: left;
+    }
+    
+    .web2py_grid tbody td {
+        padding: 0px 0px 0px 45%;
+        text-align: left;
+    }
+    
+    .web2py_grid .web2py_form td {
+        padding: 0px 0px 0px 0px;
+    }
+}
