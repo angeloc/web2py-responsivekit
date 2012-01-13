@@ -68,8 +68,8 @@
   
   <!--[if !IE]><!-->
   <script language="JavaScript">
-  var width_filter = '.container'
-  var controller   = '{{=URL(a=request.application, c=request.controller, f='screensize')}}'
+  var width_filter = '{{=current.plugins.responsivekit.screensize_filter}}'
+  var controller   = '{{=URL(a=request.application, c=current.plugins.responsivekit.screensize_controller , f=current.plugins.responsivekit.screensize_function)}}'
   </script>
   <link rel="stylesheet" type="text/css" href="{{=URL('static','plugin_responsivekit/responsivekit.css')}}" />
   <script src="{{=URL('static','plugin_responsivekit/responsivekit.js')}}"></script>
