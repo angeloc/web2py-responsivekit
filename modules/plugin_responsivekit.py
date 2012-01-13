@@ -4,7 +4,6 @@ import os
 
 def set_screen_size():
     size = (int(current.request.args[0]) / 20 * 20)
-    print size
     current.session.plugin_responsivekit_width = (size , size)
 
 def RIMG(url):
