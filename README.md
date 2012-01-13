@@ -33,9 +33,9 @@ Images are resized only on multiples of 20px, so a dos attack cannot be accompli
 you can have some tens resized images for each original image.
 Please refer to PIL manual for explanation on setting pil_format, pil_quality, pil_optimize, and pil_size.
 
-* src.sencha.io
+* src.sencha.io:
 Use the famous src.sencha.io service, so it works also on evironments in which PIL cannot be installed.
-pil_* are not used when you choose src.sencha.io.
+pil_* parameters are not used when you choose src.sencha.io.
 
 ##### screensize_filter
 It's used to choose wich element of DOM will be used for width reference.
