@@ -19,7 +19,7 @@ def resize_with_sencha(url):
     size = get_screen_size()
     newurl = current.request.env.http_host + url
     if not size:
-        return 'http://src.sencha.io/http://%s' % newurl
+        return url
     else:
         return 'http://src.sencha.io/%s/http://%s' % (size[0], newurl)
     
@@ -49,6 +49,7 @@ def resize_with_pil(url):
     return respimgpath
 
 def get_screen_size():
+    plugins = current.plugins
     size = current.session.plugin_responsivekit_width
     is_mobile = current.request.user_agent().is_mobile
     if (not size and not is_mobile) or (size and size[0] > 700):

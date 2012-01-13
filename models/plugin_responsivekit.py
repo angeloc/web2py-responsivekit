@@ -1,7 +1,7 @@
 from gluon.tools import PluginManager
 from gluon import current
 
-plugins = PluginManager('responsivekit', service='PIL',
+plugins = PluginManager('responsivekit', service='src.sencha.io',
                                             pil_format='JPEG',
                                             pil_quality=50,
                                             pil_optimize=1,
