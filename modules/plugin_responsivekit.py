@@ -19,7 +19,7 @@ def resize_with_sencha(url):
     size = get_screen_size()
     newurl = current.request.env.http_host + url
     if not size:
-        return 'http://src.sencha.io/http://%s/' % newurl
+        return 'http://src.sencha.io/http://%s' % newurl
     else:
         return 'http://src.sencha.io/%s/http://%s' % (size[0], newurl)
     
