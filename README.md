@@ -67,7 +67,8 @@ To make an image responsive, simply put the url in a **RIMG** tag like this:
 		return dict(image=image)
 
 ### Live demo
-You can find it [here](http://angelo.fluxflex.com/responsivekit)
+You can find it [here](http://angelo.fluxflex.com/responsivekit). You can view the demo with a pc also, 
+simply resize the browser window to trigger the responsive layout.
 
 # License
 plugin_responsivekit is Licensed under the **LGPL license version 3** (http://www.gnu.org/licenses/lgpl.html)
