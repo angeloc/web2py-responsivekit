@@ -51,7 +51,7 @@ def get_screen_size():
     plugins = current.plugins
     size = current.session.plugin_responsivekit_width
     is_mobile = current.request.user_agent().is_mobile
-    if (not size and not is_mobile) or (size and size[0] > 700):
+    if (not size and not is_mobile) or (size and size[0] > 767):
         return None
     elif not size and is_mobile:
         size = plugins.responsivekit.pil_size

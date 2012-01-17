@@ -3,15 +3,14 @@ Media query for responsive css tables
 Idea from http://css-tricks.com/responsive-data-tables/
 Author: Angelo Compagnucci <angelo.compagnucci@gmail.com>
 */
-@media
-only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
         
     .resp-header {
         white-space: nowrap;
         position: absolute;
         width: 40%;
         padding-right: 10 px;
-        left: 5px;
+        margin: 5px;
         text-overflow: ellipsis;
         overflow: hidden;
         z-index: 1;
@@ -69,4 +68,10 @@ only screen and (max-width: 700px) {
     .web2py_grid .web2py_form td {
         padding: 0px 0px 0px 0px;
     }
+    
+    input[type="text"], input[type="password"], select  { width: 97%; }
+}
+
+@media only screen and (max-width: 420px) {
+	body h1 { font-size: 3em;}
 }

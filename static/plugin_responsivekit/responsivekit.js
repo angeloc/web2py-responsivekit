@@ -26,7 +26,7 @@ function set_screen_size() {
 }
 
 function set_table_headers(){
-    if (jQuery(window).width() < 700) {
+    if (jQuery(window).width() < 767) {
         jQuery("div").not("form").children("table").each(function() {
         curtable = jQuery(this);
         curtable.find("td:empty").html("&nbsp;");
