@@ -4,16 +4,19 @@ Idea from http://css-tricks.com/responsive-data-tables/
 Author: Angelo Compagnucci <angelo.compagnucci@gmail.com>
 */
 @media only screen and (max-width: 767px) {
-        
+    
+    .web2py_grid tbody tr .resp-header { line-height: 13.5px; }
+    
     .resp-header {
+        vertical-align: top;
         white-space: nowrap;
         position: absolute;
         width: 40%;
         padding-right: 10 px;
-        margin: 5px;
         text-overflow: ellipsis;
         overflow: hidden;
         z-index: 1;
+        margin-left: 5px;
     }
 
     div:not(.calendar) table, 

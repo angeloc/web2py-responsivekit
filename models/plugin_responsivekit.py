@@ -30,7 +30,7 @@ Function should be:
     def screensize():
         return set_screen_size()
 """
-plugins = PluginManager('responsivekit', service='PIL',
+plugins = PluginManager('responsivekit', service='src.sencha.io',
                                             screensize_filter = '.container',
                                             screensize_controller = 'default',
                                             screensize_function = 'screensize',
