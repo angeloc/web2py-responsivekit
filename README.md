@@ -20,7 +20,7 @@ If you want to use responsive tables in a custom layout, you have to include thi
 
 It's important to include conditional directives for IE, because IE doesn't supports this responsive tables design, so it's disabled.
 
-Plugin works changing table's aspect on the fly when the resolution of target device is smaller than 700 pixels, it uses a combination of css media queries and javascript to accomplish the goal. If you want to change the resolution you have to edit both the css and the javascript (replacing 700 with your desired value).
+Plugin works changing table's aspect on the fly when the resolution of target device is smaller than 767 pixels (greatest mobile size in skeleton), it uses a combination of css media queries and javascript to accomplish the goal.
 
 #### Responsive Images
 Once the plugin is installed, you have a new model, plugin_responsivekit.py. Within this, you can find plugin default parameters.
