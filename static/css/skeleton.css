@@ -419,8 +419,8 @@
 
     /* Note: Design for a width of 320px */
 
-    @media only screen and (max-width: 479px) {
-        .container { width: 300px; }
+    @media only screen and (max-width: 767px) {
+        .container { width: 95%; }
 
         .container .one.column,
         .container .two.columns,
@@ -439,7 +439,7 @@
         .container .fifteen.columns,
         .container .sixteen.columns,
         .container .one-third.column,
-        .container .two-thirds.column  { width: 300px; }
+        .container .two-thirds.column  { width: 100%; }
 
         /* Offsets */
         .container .offset-by-one,
@@ -458,34 +458,6 @@
         .container .offset-by-fourteen,
         .container .offset-by-fifteen { padding-left: 0; }
 
-    }
-    
-/* #Mobile (Landscape)
-================================================== */
-
-    /* Note: Design for a width of 480px */
-
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .container { width: 420px; }
-
-        .container .one.column,
-        .container .two.columns,
-        .container .three.columns,
-        .container .four.columns,
-        .container .five.columns,
-        .container .six.columns,
-        .container .seven.columns,
-        .container .eight.columns,
-        .container .nine.columns,
-        .container .ten.columns,
-        .container .eleven.columns,
-        .container .twelve.columns,
-        .container .thirteen.columns,
-        .container .fourteen.columns,
-        .container .fifteen.columns,
-        .container .sixteen.columns,
-        .container .one-third.column,
-        .container .two-thirds.column { width: 420px; }
     }
 
 /* #Tablet (Portrait)
